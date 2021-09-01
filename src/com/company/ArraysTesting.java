@@ -201,6 +201,7 @@ public class ArraysTesting {
 
     public static List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> res = new ArrayList<>();
+
         int n = nums.length;
 
         // the numbers go from 1 to the length of array.
