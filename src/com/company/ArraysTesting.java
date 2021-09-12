@@ -221,4 +221,29 @@ public class ArraysTesting {
         return res;
     }
 
+    public int[] intersect(int[] nums1, int[] nums2) {
+        Map<Integer, Integer> map = new HashMap<>();
+        List<Integer> resultArray = new ArrayList<>();
+
+        for(int n : nums1) {
+            Integer count = map.containsKey(n) ? map.get(n) : 0;
+            map.put(n, ++count);
+        }
+
+        for(int n : nums2)
+            if(map.containsKey(n) && map.get(n) > 0){
+                Integer count = set.get(n);
+                resultArray.add(n);
+                map.put(n, --count)
+            }
+
+        int[] result = new int[resultArray.size()];
+
+        for(int i = 0; i < resultArray.size(); i++){
+            result[i] = resultArray.get(i).intValue();
+        }
+        map.
+        return result;
+    }
+
 }

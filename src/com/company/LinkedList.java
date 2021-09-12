@@ -17,7 +17,7 @@ public class LinkedList {
         else {
             Node newNode = new Node(data);
             newNode.previous = this.tail;
-            this.tail.next = newNode;
+            this.tail = newNode;
             this.tail = newNode;
         }
     }
